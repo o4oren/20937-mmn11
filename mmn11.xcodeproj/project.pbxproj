@@ -25,6 +25,11 @@
 /* Begin PBXFileReference section */
 		BAEC2795273A96C200B0CC0B /* mmn11 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mmn11; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAEC2798273A96C200B0CC0B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		BAEC279F273BF5B600B0CC0B /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		BAEC27A0273BF5CB00B0CC0B /* USocial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = USocial.h; sourceTree = "<group>"; };
+		BAEC27A1273BF5E400B0CC0B /* Message.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		BAEC27A2273BF5F300B0CC0B /* Post.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		BAEC27A3273BF73F00B0CC0B /* Media.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Media.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				BAEC2798273A96C200B0CC0B /* main.cpp */,
+				BAEC279F273BF5B600B0CC0B /* User.h */,
+				BAEC27A0273BF5CB00B0CC0B /* USocial.h */,
+				BAEC27A1273BF5E400B0CC0B /* Message.h */,
+				BAEC27A2273BF5F300B0CC0B /* Post.h */,
+				BAEC27A3273BF73F00B0CC0B /* Media.h */,
 			);
 			path = mmn11;
 			sourceTree = "<group>";
