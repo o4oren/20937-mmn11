@@ -1,5 +1,7 @@
 #include "USocial.h"
 #include "User.h"
+#include "Media.h"
+
 #include <exception>
 #include <iostream>
 

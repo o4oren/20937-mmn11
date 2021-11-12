@@ -16,6 +16,7 @@ private:
     std::string text;
     
 public:
+    Message(std::string);
     std::string getText();
 };
 

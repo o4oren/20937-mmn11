@@ -22,7 +22,17 @@ protected:
     ~User();
 
 public:
-    
+    unsigned long getId();
+    std::string getName();
+    void addFriend(User*);
+    void removeFriend(User*);
+    void post(std::string);
+    void post(std::string, Media*);
+    std::list<Post*> getPosts();
+    void viewFriendsPosts();
+    void recieveMessage(Message*);
+    void sendMessage(User*, Message*);
+    void viewReceivedMessages();
 };
 
 #endif /* User_h */
