@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BACDE63F273E67D6008F1054 /* BusinessUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessUser.h; sourceTree = "<group>"; };
 		BAEC2795273A96C200B0CC0B /* mmn11 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mmn11; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAEC2798273A96C200B0CC0B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		BAEC279F273BF5B600B0CC0B /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -68,6 +69,7 @@
 				BAEC27A1273BF5E400B0CC0B /* Message.h */,
 				BAEC27A2273BF5F300B0CC0B /* Post.h */,
 				BAEC27A3273BF73F00B0CC0B /* Media.h */,
+				BACDE63F273E67D6008F1054 /* BusinessUser.h */,
 			);
 			path = mmn11;
 			sourceTree = "<group>";
