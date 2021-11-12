@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BACDE641273E6C46008F1054 /* USocial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BACDE640273E6C46008F1054 /* USocial.cpp */; };
+		BACDE644273E7CCD008F1054 /* Message.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BACDE642273E7CCD008F1054 /* Message.cpp */; };
+		BACDE646273E7FC7008F1054 /* Post.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BACDE645273E7FC7008F1054 /* Post.cpp */; };
+		BACDE649273E8082008F1054 /* Media.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BACDE647273E8082008F1054 /* Media.cpp */; };
+		BACDE64B273E81A2008F1054 /* User.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BACDE64A273E81A2008F1054 /* User.cpp */; };
 		BAEC2799273A96C200B0CC0B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAEC2798273A96C200B0CC0B /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,7 +28,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BACDE63F273E67D6008F1054 /* BusinessUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessUser.h; sourceTree = "<group>"; };
+		BACDE640273E6C46008F1054 /* USocial.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = USocial.cpp; sourceTree = "<group>"; };
+		BACDE642273E7CCD008F1054 /* Message.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Message.cpp; sourceTree = "<group>"; };
+		BACDE645273E7FC7008F1054 /* Post.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Post.cpp; sourceTree = "<group>"; };
+		BACDE647273E8082008F1054 /* Media.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Media.cpp; sourceTree = "<group>"; };
+		BACDE64A273E81A2008F1054 /* User.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = User.cpp; sourceTree = "<group>"; };
 		BAEC2795273A96C200B0CC0B /* mmn11 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mmn11; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAEC2798273A96C200B0CC0B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		BAEC279F273BF5B600B0CC0B /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -65,11 +74,15 @@
 			children = (
 				BAEC2798273A96C200B0CC0B /* main.cpp */,
 				BAEC279F273BF5B600B0CC0B /* User.h */,
+				BACDE64A273E81A2008F1054 /* User.cpp */,
 				BAEC27A0273BF5CB00B0CC0B /* USocial.h */,
+				BACDE640273E6C46008F1054 /* USocial.cpp */,
 				BAEC27A1273BF5E400B0CC0B /* Message.h */,
+				BACDE642273E7CCD008F1054 /* Message.cpp */,
 				BAEC27A2273BF5F300B0CC0B /* Post.h */,
+				BACDE645273E7FC7008F1054 /* Post.cpp */,
 				BAEC27A3273BF73F00B0CC0B /* Media.h */,
-				BACDE63F273E67D6008F1054 /* BusinessUser.h */,
+				BACDE647273E8082008F1054 /* Media.cpp */,
 			);
 			path = mmn11;
 			sourceTree = "<group>";
@@ -131,7 +144,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BACDE64B273E81A2008F1054 /* User.cpp in Sources */,
+				BACDE649273E8082008F1054 /* Media.cpp in Sources */,
+				BACDE641273E6C46008F1054 /* USocial.cpp in Sources */,
 				BAEC2799273A96C200B0CC0B /* main.cpp in Sources */,
+				BACDE644273E7CCD008F1054 /* Message.cpp in Sources */,
+				BACDE646273E7FC7008F1054 /* Post.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
