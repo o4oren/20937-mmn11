@@ -1,6 +1,6 @@
 #include "USocial.h"
 #include "User.h"
-
+#include <iostream>
 User* USocial::getUserById(unsigned long id) {
     auto it = users.find(id);
     if(it != users.end()) {
@@ -38,7 +38,8 @@ void USocial::removeUser(User* user) {
     
     // if we have found the user id we validate that the name is also identical before erasing
     if(it != users.end() && user->name == it->second->name) {
-        users.erase(it);
+        users.erase(it->first);
+        delete it->second;
     }
 }
 

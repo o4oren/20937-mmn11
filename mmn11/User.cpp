@@ -8,9 +8,15 @@ User::User() {
 }
 
 User::~User() {
-    // destroy posts
+    std::cout<<"dest"<<std::endl;
+    // destroy posts - the only "new" objects the User created
     for(auto&& post : posts) {
-      delete post;
+        delete post;
+    }
+    
+    // also destroy messages - each user holds pointers to his own recieved messages
+    for(auto&& message : recievedMessages) {
+        delete message;
     }
 }
 
@@ -50,17 +56,23 @@ std::list<Post *> User::getPosts() {
 void User::viewFriendsPosts() {
     std::cout << name << " viewing posts by friends:" << std::endl;
     for (auto const& friendId : friends) {
-        auto myFriend = us->getUserById(friendId);
-        std::cout << myFriend->name << " posted:" << std::endl;
-        for (auto const& post : myFriend->posts) {
-            std::cout << post->getText() << std::endl;
-            if(post->getMedia() != NULL) {
-                post->getMedia()->display();
+        try {
+            auto myFriend = us->getUserById(friendId);
+            std::cout << myFriend->name << " posted:" << std::endl;
+            for (auto const& post : myFriend->posts) {
+                std::cout << post->getText() << std::endl;
+                if(post->getMedia() != NULL) {
+                    post->getMedia()->display();
+                }
             }
+        } catch (const std::exception& e)
+        {
+            std::cout << "error: " << e.what() << std::endl;
         }
     }
     std::cout << "=============" << std::endl;
 }
+
 
 void User::recieveMessage(Message* message) {
     recievedMessages.push_back(message);
