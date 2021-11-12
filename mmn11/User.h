@@ -5,17 +5,17 @@
 #include "Message.h"
 #include <string>
 #include <list>
-
-class USocial; // forward declaration of USocial so we can break cross declaration of User/USocial
+#include "USocial.h"
 
 class User
 {
+    friend class USocial;
 protected:
     unsigned long id;
     std::string name;
     std::list<unsigned long> friends;
-    std::list<Post> posts;
-    std::list<Message> recievedMessages;
+    std::list<Post*> posts;
+    std::list<Message*> recievedMessages;
     USocial* us;
     
     User();
@@ -31,8 +31,14 @@ public:
     std::list<Post*> getPosts();
     void viewFriendsPosts();
     void recieveMessage(Message*);
-    void sendMessage(User*, Message*);
+    virtual void sendMessage(User*, Message*);
     void viewReceivedMessages();
+    void setUsocial(USocial*);
+};
+
+class BusinessUser: public User {
+    friend class USocial;
+    void sendMessage(User*, Message*);
 };
 
 #endif /* User_h */

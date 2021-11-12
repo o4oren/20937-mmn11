@@ -8,14 +8,18 @@
 #ifndef USocial_h
 #define USocial_h
 
-#include "User.h"
 #include <map>
 #include <string>
+#include <algorithm>
+
+class User;
 
 class USocial
 {
 private:
-    std::map<unsigned long, User> users;
+    std::map<const unsigned long, User*> users;
+    unsigned long lastUsedId;
+
 public:
     User* registerUser(std::string, bool);
     User* registerUser(std::string);

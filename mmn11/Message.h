@@ -20,4 +20,5 @@ public:
     std::string getText();
 };
 
+
 #endif /* Message_h */

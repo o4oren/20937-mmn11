@@ -16,10 +16,11 @@ class Post
 private:
     std::string text;
     Media* media;
+    void init(std::string, Media* media);
 public:
-    void post(std::string);
-    void post(std::string, Media* media);
-    std::string getString();
+    Post(std::string);
+    Post(std::string, Media* media);
+    std::string getText();
     Media* getMedia();
 };
 
