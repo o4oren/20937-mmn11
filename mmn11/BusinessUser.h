@@ -8,8 +8,6 @@
 #ifndef BusinessUser_h
 #define BusinessUser_h
 
-class BusinessUser: User {
-    void sendMessage(User*, Message*);
-}
+
 
 #endif /* BusinessUser_h */
