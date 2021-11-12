@@ -28,6 +28,7 @@ int main()
     
     u5->viewReceivedMessages();
     
+
     try
     {
         u3->sendMessage(u5, new Message("All your base are belong to us"));
